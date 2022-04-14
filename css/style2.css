@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+/* 全体 */
+
+html{
+    font-size: 62.5%; 
+    /* 16 px * 62.5% = 10px */
+    /* margin: 0 auto; */
+}
+
+body{
+    background-color: white;
+    font-size: 2.0rem;
+    font-family: "Nico Moji",'Lato', 'Noto Sans JP', Arial, Helvetica, sans-serif;
+}
+    
+img {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    margin: auto;
+    text-align: center;
+}
+
+/* header */
+.title-wrapper{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 200px;
+}
+
+.title{
+    flex: 38%;
+    font-size: 3.0rem;
+    padding: 10px 20px;
+}
+
+.title img{
+    width: 65%;
+}
+
+.rule{
+    border: solid 1px black;
+    border-radius: 20px;
+    flex: 50%;
+    padding: 10px;
+    text-align: left;
+    margin: 0 auto 20px auto;
+    font-size: 2.4rem;
+    height: 180px;
+    background-color: #fbedf0;
+    line-height: 1.3;
+
+}
+
+.rule ul{
+    list-style: disc;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+/* main */
+
+/*          
+   Game Area 
+             */
+
+.gamearea-wrapper{
+    padding-bottom: 10px;
+    display: grid;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    grid-template-columns: repeat(5, minmax(250px,1fr));
+}
+
+
+.Profile h2{
+    font-size: 4.0rem;
+    margin-bottom: 10px;
+}
+
+.Profile img{
+    width: 40%;
+    height: auto;
+    border: solid 1.5px #479FF6;
+    border-radius: 77px;
+    margin-bottom: 10px;
+}
+
+.scoretable{
+    flex: 45%;
+    margin-left: 40px;
+    align-self: center;
+    
+}
+
+.score{
+    font-size: 5.0rem;
+}
+
+
+/* Gauge */
+.hpGuage{
+    border: 1px solid #777;
+    margin-top: 10px;
+    width: 70%;
+    margin: auto;
+}
+.hpGuageValue{
+   height: 20px;
+   background-color: #6bf; 
+   transition: 1s;
+}
+
+/* vs */
+.display_versus{
+    font-size: 5.0rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#message{
+    color:#ff006f;
+    font-size: 5.0rem;
+    animation: fadeIn 0.2s ease 0.3s 1 normal;
+}
+
+
+
+
+
+/*          
+    Control Area 
+                     */
+
+.result{
+    width: 800px;
+    text-align: center;
+    border: solid 1px #bfbfbf;
+    border-radius: 20px;
+    line-height: 1.5;
+    padding: 10px;
+    margin: 0 auto 30px auto;
+    background-color: black;
+    color: chartreuse;
+    font-size: 2.4rem;
+}
+
+
+/*          
+    Control Area 
+                     */
+
+.controlbtn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    padding-bottom: 30px;
+}
+
+.ctrlbtn{
+    flex: 40%;
+    padding: 15px;
+    border: solid 1px;
+    text-align: center;
+    max-width: 400px;
+    background-color:#bfbfbf;
+    border-radius: 20px;
+    font-size: 3.0rem;
+}
+
+/* じゃんけんボタン */
+.jankenbtn-wrapper{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+.jankenbtn{
+    flex: 30%;
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    height: 150px;
+    background-color:#ec6faa;
+    min-width: 130px;
+    font-size: 4.0rem;
+    text-align: center;
+    display: inline-block;
+    margin: 0 40px;
+}
+
+.jankenbtn p{
+    font-size: 2.4rem;
+    padding-left: 40px;
+}
+
+
+.jankenbtn img{
+    width: 20%;
+    height: auto;
+}
+
+#guu{
+    background-image: url(..//img/1.png);
+    background-repeat: no-repeat;
+    background-size: 130px;
+    background-position: 10% 50%;
+}
+
+#choki{
+    background-image: url(..//img/2.png);
+    background-repeat: no-repeat;
+    background-size: 130px;
+    background-position: 10% 50%;
+}
+
+#pa{
+    background-image: url(..//img/3.png);
+    background-repeat: no-repeat;
+    background-size: 130px;
+    background-position: 10% 50%;
+}
+
+/* BGM Area */
+.entertainment{
+    display: flex;
+    margin-top: 20px;
+    height: 140px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #fbedf0;
+}
+
+.music{
+    width: 40%;
+    margin: 30px;
+    height: 80px;
+}
+
+
+/* YouTube */
+.youtube{
+    text-align: center;
+    margin: auto;
+    height: 80px;
+    width: 400px;
+    padding-bottom: 30px;
+}
+
+.youtube img{
+    width: 80%;
+    height: auto;
+}
+
+.finalshotmovie{
+    display: none;
+}
+
+
+/* footer */
+footer{
+    background-color: #bfbfbf;
+    padding: 10px;
+    /* margin-top: 180px; */
+}
+
+
+#state{
+  font-weight: bold;
+  color: red;
+  margin: 10px 0;
+}
+

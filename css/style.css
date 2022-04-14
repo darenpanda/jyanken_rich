@@ -1,0 +1,43 @@
+.rand_area{
+    box-sizing: border-box;
+    border: 2px solid #CCC;
+    padding: 10px 10px 20px 10px;
+    text-align: center;
+}
+
+.rand_name{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.rand_area button{
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 15px;
+    color: #FFF;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.stop{
+    background-color: #47bc68;
+}
+
+.restart{
+    background-color: #ff8282;
+}
+
+h1 { 
+    font-size :30px 
+    color red;
+}
+
+img {
+    width: auto;
+    height: 300px;
+    justify-content: center 
+    }
+
+

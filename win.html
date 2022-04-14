@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+<body>
+ 
+<img  src="img/trip.jpg" alt="">
+  
+  
+
+<div>
+    <div class="rand_area">
+        <div class="rand_name"></div>
+        <button type="button" class="stop">おみくじ!</button>
+        <button type="button" class="restart" style="display: none;">もう一度</button>
+    </div>
+  
+</div>
+
+
+
+<div>
+    <!-- 画像検索 -->
+    <form name="search">
+        <input name="key" type="text"  class="aa" value="フランス　"  placeholder="文字を入力してください">
+        <input name="btn" type="submit" value="ボタン">
+      </form>
+  
+      <div id="result"></div>
+
+      <script type="text/javascript">
+        var rand_area = document.getElementById("rand_area");
+        console.log(rand_area.value);
+        rand_area.value = "rand_area";
+        console.log(rand_area.value);
+        </script>
+
+
+
+
+ <script src="js/1.js"></script>
+
+<!-- ここまで画像検索 -->
+
+<audio type="audio/mpeg" ></audio>
+  <audio src="m3/1.mp3" autoplay id="audio">
+
+
+</div>
+</body>
+</html>
